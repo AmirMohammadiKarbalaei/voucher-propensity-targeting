@@ -1,0 +1,34 @@
+# Data never goes in git
+data/
+*.csv
+*.csv.gz
+*.parquet
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Secrets and local config
+.env
+*.json.key
+kaggle.json
+
+# Tool outputs
+mlruns/
+mlartifacts/
+logs/
+
+# Airflow local files
+airflow/config/
+airflow/plugins/
+
+# MLflow local tracking
+mlflow.db
+
+# Small result tables are fine to share (aggregates, no raw data)
+!reports/*.csv
+
+# CatBoost training logs
+catboost_info/

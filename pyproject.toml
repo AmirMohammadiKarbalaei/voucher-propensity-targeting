@@ -1,0 +1,21 @@
+[project]
+name = "ecommerce-propensity-targeting"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "catboost>=1.2.10",
+    "evidently==0.7.23",
+    "jupyter>=1.1.1",
+    "lightgbm>=4.7.0",
+    "matplotlib>=3.11.2",
+    "mlflow>=3",
+    "optuna>=5.0.0",
+    "pandas>=3.0.6",
+    "pyarrow<26",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+    "shap>=0.51.0",
+    "statsmodels>=0.15.0",
+    "streamlit>=1.66.1",
+    "xgboost>=3.2.0",
+]

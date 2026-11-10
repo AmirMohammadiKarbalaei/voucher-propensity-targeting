@@ -1,0 +1,14 @@
+# Python libraries for the Azure ML training job (an "environment")
+name: lgbm-train
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - lightgbm==4.7.0
+      - pandas<3
+      - pyarrow
+      - scikit-learn
+      - mlflow==3.15.0              # highest version azureml-mlflow supports
+      - azureml-mlflow==1.62.0.post6  # sends metrics from the job to the Azure ML studio

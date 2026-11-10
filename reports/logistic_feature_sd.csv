@@ -1,0 +1,15 @@
+,train_sd
+days_since_last_event,8.728896012032758
+days_since_last_cart,5.506517137309688
+days_since_last_purchase,5.832765566917752
+log_n_events_7d,1.002333975791119
+log_n_events_1d,0.4920391823551421
+active_days_30d,2.1435340481741534
+log_n_sessions_30d,0.5368097203051583
+log_n_carts_30d,0.3841147651608998
+log_n_purchases_30d,0.34538421067358593
+log_avg_price_viewed,1.0804774531524612
+log_n_categories_30d,0.5437922707387332
+carts_per_view,0.10452934018022388
+log_events_per_session,0.6609717426940411
+log_longest_visit_min,1.2694849990446426

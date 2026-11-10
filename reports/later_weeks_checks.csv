@@ -1,0 +1,49 @@
+week,run,stage,check,value,threshold,level,action
+2019-11-18,day 0,health,users to score vs last week,+7.7%,within +/-30%,OK,check the gold load (missing or doubled data)
+2019-11-18,day 0,health,duplicate users,0,0,OK,check the gold load
+2019-11-18,day 0,health,invalid scores,0,0,OK,check the scoring step
+2019-11-18,day 0,inputs,features with PSI > threshold,none,PSI <= 0.25,OK,send; find out why these inputs moved (logging change? real behaviour?)
+2019-11-18,day 0,outputs,score PSI,0.034,<= 0.1,OK,send; levels may be off
+2019-11-18,day 0,outputs,mean score / normal buy rate,1.33,0.7-1.3,ALERT,send; anchor the money estimates to the normal rate and report a range
+2019-11-18,day 7,results,expected / actual buyers,1.52,0.8-1.25,ALERT,refit the translator on this week if it was a normal week; else note it as unusual
+2019-11-18,day 7,results,"lift@50,000",12.2,no earlier weeks yet,OK,keep as the first comparison point
+2019-11-25,day 0,health,users to score vs last week,+4.5%,within +/-30%,OK,check the gold load (missing or doubled data)
+2019-11-25,day 0,health,duplicate users,0,0,OK,check the gold load
+2019-11-25,day 0,health,invalid scores,0,0,OK,check the scoring step
+2019-11-25,day 0,inputs,features with PSI > threshold,none,PSI <= 0.25,OK,send; find out why these inputs moved (logging change? real behaviour?)
+2019-11-25,day 0,outputs,score PSI,0.965,<= 0.1,ALERT,send; levels may be off
+2019-11-25,day 0,outputs,mean score / normal buy rate,1.86,0.7-1.3,ALERT,send; anchor the money estimates to the normal rate and report a range
+2019-11-25,day 7,results,expected / actual buyers,2.0,0.8-1.25,ALERT,refit the translator on this week if it was a normal week; else note it as unusual
+2019-11-25,day 7,results,"lift@50,000 vs earlier weeks (12.2)",14.2,drop <= 25%,OK,RETRAIN: the ranking itself got worse
+2019-12-02,day 0,health,users to score vs last week,+3.6%,within +/-30%,OK,check the gold load (missing or doubled data)
+2019-12-02,day 0,health,duplicate users,0,0,OK,check the gold load
+2019-12-02,day 0,health,invalid scores,0,0,OK,check the scoring step
+2019-12-02,day 0,inputs,features with PSI > threshold,none,PSI <= 0.25,OK,send; find out why these inputs moved (logging change? real behaviour?)
+2019-12-02,day 0,outputs,score PSI,0.878,<= 0.1,ALERT,send; levels may be off
+2019-12-02,day 0,outputs,mean score / normal buy rate,1.81,0.7-1.3,ALERT,send; anchor the money estimates to the normal rate and report a range
+2019-12-02,day 7,results,expected / actual buyers,2.08,0.8-1.25,ALERT,refit the translator on this week if it was a normal week; else note it as unusual
+2019-12-02,day 7,results,"lift@50,000 vs earlier weeks (13.2)",15.3,drop <= 25%,OK,RETRAIN: the ranking itself got worse
+2019-12-09,day 0,health,users to score vs last week,+0.8%,within +/-30%,OK,check the gold load (missing or doubled data)
+2019-12-09,day 0,health,duplicate users,0,0,OK,check the gold load
+2019-12-09,day 0,health,invalid scores,0,0,OK,check the scoring step
+2019-12-09,day 0,inputs,features with PSI > threshold,none,PSI <= 0.25,OK,send; find out why these inputs moved (logging change? real behaviour?)
+2019-12-09,day 0,outputs,score PSI,0.003,<= 0.1,OK,send; levels may be off
+2019-12-09,day 0,outputs,mean score / normal buy rate,1.01,0.7-1.3,OK,send; anchor the money estimates to the normal rate and report a range
+2019-12-09,day 7,results,expected / actual buyers,1.13,0.8-1.25,OK,refit the translator on this week if it was a normal week; else note it as unusual
+2019-12-09,day 7,results,"lift@50,000 vs earlier weeks (14.2)",16.0,drop <= 25%,OK,RETRAIN: the ranking itself got worse
+2019-12-16,day 0,health,users to score vs last week,+2.6%,within +/-30%,OK,check the gold load (missing or doubled data)
+2019-12-16,day 0,health,duplicate users,0,0,OK,check the gold load
+2019-12-16,day 0,health,invalid scores,0,0,OK,check the scoring step
+2019-12-16,day 0,inputs,features with PSI > threshold,none,PSI <= 0.25,OK,send; find out why these inputs moved (logging change? real behaviour?)
+2019-12-16,day 0,outputs,score PSI,0.003,<= 0.1,OK,send; levels may be off
+2019-12-16,day 0,outputs,mean score / normal buy rate,1.03,0.7-1.3,OK,send; anchor the money estimates to the normal rate and report a range
+2019-12-16,day 7,results,expected / actual buyers,0.69,0.8-1.25,ALERT,refit the translator on this week if it was a normal week; else note it as unusual
+2019-12-16,day 7,results,"lift@50,000 vs earlier weeks (14.7)",12.5,drop <= 25%,OK,RETRAIN: the ranking itself got worse
+2019-12-23,day 0,health,users to score vs last week,+4.4%,within +/-30%,OK,check the gold load (missing or doubled data)
+2019-12-23,day 0,health,duplicate users,0,0,OK,check the gold load
+2019-12-23,day 0,health,invalid scores,0,0,OK,check the scoring step
+2019-12-23,day 0,inputs,features with PSI > threshold,none,PSI <= 0.25,OK,send; find out why these inputs moved (logging change? real behaviour?)
+2019-12-23,day 0,outputs,score PSI,0.005,<= 0.1,OK,send; levels may be off
+2019-12-23,day 0,outputs,mean score / normal buy rate,1.11,0.7-1.3,OK,send; anchor the money estimates to the normal rate and report a range
+2019-12-23,day 7,results,expected / actual buyers,0.83,0.8-1.25,OK,refit the translator on this week if it was a normal week; else note it as unusual
+2019-12-23,day 7,results,"lift@50,000 vs earlier weeks (14.2)",13.1,drop <= 25%,OK,RETRAIN: the ranking itself got worse

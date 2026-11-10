@@ -1,0 +1,9 @@
+# Managed online deployment "blue" behind the endpoint. Deploy with:
+#   az ml online-deployment create -f azure/deployment-blue.yml -g rg-ecom-ml -w ecom-ml --all-traffic
+# Billed per hour while it exists (Standard_D2as_v4, about $0.11/h): delete it after testing.
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: blue
+endpoint_name: ecom-propensity-test
+model: azureml:propensity_model:2     # MLflow model: no scoring script or environment needed
+instance_type: Standard_D2as_v4       # 2 cores, 8 GB; 1 instance reserves 4 cores of quota (20% rule)
+instance_count: 1

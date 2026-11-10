@@ -1,0 +1,25 @@
+week,run,stage,check,value,threshold,level,action
+2019-11-11,day 0,health,users to score vs last week,+5.7%,within +/-30%,OK,check the gold load (missing or doubled data)
+2019-11-11,day 0,health,duplicate users,0,0,OK,check the gold load
+2019-11-11,day 0,health,invalid scores,0,0,OK,check the scoring step
+2019-11-11,day 0,inputs,features with PSI > threshold,none,PSI <= 0.25,OK,send; find out why these inputs moved (logging change? real behaviour?)
+2019-11-11,day 0,outputs,score PSI,0.003,<= 0.1,OK,send; levels may be off
+2019-11-11,day 0,outputs,mean score / normal buy rate,1.05,0.7-1.3,OK,send; anchor the money estimates to the normal rate and report a range
+2019-11-11,day 7,results,expected / actual buyers,0.58,0.8-1.25,ALERT,refit the translator on this week if it was a normal week; else note it as unusual
+2019-11-11,day 7,results,"lift@50,000",8.1,no earlier weeks yet,OK,keep as the first comparison point
+2019-11-18,day 0,health,users to score vs last week,+7.7%,within +/-30%,OK,check the gold load (missing or doubled data)
+2019-11-18,day 0,health,duplicate users,0,0,OK,check the gold load
+2019-11-18,day 0,health,invalid scores,0,0,OK,check the scoring step
+2019-11-18,day 0,inputs,features with PSI > threshold,"days_since_last_cart 0.32, n_carts_7d 0.27, n_cart_visits_7d 0.27",PSI <= 0.25,ALERT,send; find out why these inputs moved (logging change? real behaviour?)
+2019-11-18,day 0,outputs,score PSI,0.057,<= 0.1,OK,send; levels may be off
+2019-11-18,day 0,outputs,mean score / normal buy rate,1.46,0.7-1.3,ALERT,send; anchor the money estimates to the normal rate and report a range
+2019-11-18,day 7,results,expected / actual buyers,1.68,0.8-1.25,ALERT,refit the translator on this week if it was a normal week; else note it as unusual
+2019-11-18,day 7,results,"lift@50,000 vs earlier weeks (8.1)",12.3,drop <= 25%,OK,RETRAIN: the ranking itself got worse
+2019-11-18 (fault injection),day 0,health,users to score vs last week,+7.7%,within +/-30%,OK,check the gold load (missing or doubled data)
+2019-11-18 (fault injection),day 0,health,duplicate users,0,0,OK,check the gold load
+2019-11-18 (fault injection),day 0,health,missing share up: n_events_7d,+100.0%,< +20%,STOP,find the broken upstream column before sending
+2019-11-18 (fault injection),day 0,health,feature became constant: n_events_7d,,varies,STOP,find the broken upstream column before sending
+2019-11-18 (fault injection),day 0,health,invalid scores,0,0,OK,check the scoring step
+2019-11-18 (fault injection),day 0,inputs,features with PSI > threshold,"n_events_7d 26.28, days_since_last_cart 0.32, n_carts_7d 0.27, n_cart_visits_7d 0.27",PSI <= 0.25,ALERT,send; find out why these inputs moved (logging change? real behaviour?)
+2019-11-18 (fault injection),day 0,outputs,score PSI,0.057,<= 0.1,OK,send; levels may be off
+2019-11-18 (fault injection),day 0,outputs,mean score / normal buy rate,1.46,0.7-1.3,ALERT,send; anchor the money estimates to the normal rate and report a range
