@@ -28,7 +28,7 @@ Full scope, label definition and leakage risks: [`docs/problem_statement.md`](do
 
 LightGBM, XGBoost and CatBoost finished within 0.3 points of each other.
 
-**Six weeks of weekly scoring (18 Nov to 23 Dec, including Black Friday and Christmas).** The final model (no cart features, see below) held a lift of 12–16 over random every week, with 3–5 times the precision of the current rule. No retrain was triggered.
+**Six weeks of weekly scoring (18 Nov to 23 Dec, including Black Friday and Christmas).** The final model (no cart features, see below) held a lift of 12–16 over random every week, with about 3–4 times the precision of the current rule. No retrain was triggered.
 
 ![Weekly predicted vs actual buying, and precision of the model vs the current rule](reports/later_weeks.png)
 
